@@ -159,7 +159,7 @@ A proposta está diretamente relacionada à redução do desperdício de aliment
 
 | Item | Link |
 | :--- | :--- |
-| **Site do Xepa+** | https://xepa-mais.vercel.app/ |
+| **Site do Xepa+** | https://xepamais.com.br |
 | **Agregador de links** | https://linktr.ee/xepa.mais |
 | **GitHub** | https://github.com/XepaMais |
 | **Figma** | [Protótipo do Xepa+ no Figma](https://www.figma.com/design/5Nw6zLHUqIYhwYY50plLAZ/XEPA-?node-id=0-1&p=f&t=vl4HczMBfvlPGG1F-0) |
