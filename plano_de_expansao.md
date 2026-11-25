@@ -97,7 +97,7 @@ O plano de ação está organizado em três etapas para tirar o Xepa+ do piloto 
 **Piloto de 4 semanas**, em uma ou duas feiras da Brasilândia e da Freguesia do Ó.
 
 
-- Disponibilizar o plano Grátis para atrair feirantes.
+- Disponibilizar o plano Semente para atrair feirantes.
 - Validar a experiência de compra.
 - Testar pedidos e retiradas.
 - Observar a adesão dos feirantes e consumidores.
@@ -112,7 +112,7 @@ O plano de ação está organizado em três etapas para tirar o Xepa+ do piloto 
 **1º ano**, na cidade de São Paulo.
 
 
-- Divulgar os planos Crescer e Pro conforme a demanda por visibilidade, relatórios e ferramentas for demonstrada.
+- Divulgar os planos Broto e Colheita conforme a demanda por visibilidade, relatórios e ferramentas for demonstrada.
 - Acompanhar a utilização dos recursos.
 - Avaliar os resultados das vendas e a adesão aos planos pagos.
 - Fortalecer as estratégias de marketing e retenção.
