@@ -49,8 +49,8 @@ A área do feirante reúne recursos para gerenciamento dos produtos, divulgaçã
 - Visualização e cadastro dos locais de trabalho (feiras, endereço, dias e funcionários).
 - Histórico de vendas e confirmação de entrega.
 - Comunicação com consumidores.
-- Área financeira: lucros, despesas e planilhas (planos Crescer e Pro).
-- Assistente [Xep.AI (Xepinha)](xepinha.md) (planos Crescer e Pro).
+- Área financeira: lucros, despesas e planilhas (planos Broto e Colheita).
+- Assistente [Xep.AI (Xepinha)](xepinha.md) (planos Broto e Colheita).
 
 <br>
 
