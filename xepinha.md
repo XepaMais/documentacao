@@ -64,9 +64,9 @@ Exemplos de perguntas que o feirante pode fazer:
 
 | Plano | Mensalidade | Xep.AI |
 | :--- | :---: | :---: |
-| **Grátis** | R$ 0,00 | - |
-| **Crescer** | R$ 29,90 | Sim |
-| **Pro** | R$ 59,90 | Sim |
+| **Semente** | R$ 0,00 | - |
+| **Broto** | R$ 29,90 | Sim |
+| **Colheita** | R$ 59,90 | Sim |
 
 A Xepinha é um dos recursos que diferenciam os planos pagos. Os detalhes dos planos estão em [Financeiro](financeiro.md).
 
