@@ -22,11 +22,11 @@
 
 O Xepa+ adotará um modelo híbrido de monetização, combinando mensalidades opcionais e comissões sobre as vendas realizadas pela plataforma. O objetivo é facilitar a entrada de pequenos feirantes, oferecendo recursos adicionais para aqueles que desejam aumentar suas vendas, divulgar seus produtos e acompanhar o desempenho do negócio.
 
-O modelo é dividido em três planos: **Grátis**, **Crescer** e **Pro**. Quanto maior o plano contratado, menor a comissão cobrada por venda e maior a quantidade de ferramentas disponíveis.
+O modelo é dividido em três planos: **Semente**, **Broto** e **Colheita**. Quanto maior o plano contratado, menor a comissão cobrada por venda e maior a quantidade de ferramentas disponíveis.
 
 ### 1.1 Descrição dos Planos
 
-#### Plano Grátis - R\$ 0/mês
+#### Plano Semente - R\$ 0/mês
 - **Comissão:** 15% por venda.
 - **Objetivo:** permitir que novos feirantes comecem a utilizar a plataforma sem pagar mensalidade.
 - **Perfil:** pequenos feirantes e novos vendedores que querem conhecer a plataforma. O feirante pode cadastrar sua banca, divulgar produtos e cestas, informar onde trabalha e acompanhar os pedidos recebidos.
@@ -41,12 +41,12 @@ O modelo é dividido em três planos: **Grátis**, **Crescer** e **Pro**. Quanto
   
 <br>
 
-#### Plano Crescer - R\$ 29,90/mês
+#### Plano Broto - R\$ 29,90/mês
 - **Comissão:** 8% por venda.
 - **Objetivo:** ajudar feirantes que já vendem pela plataforma a acompanhar melhor seus resultados e administrar o negócio.
-- **Perfil:** feirantes com vendas recorrentes que desejam aumentar a visibilidade e acompanhar melhor as vendas. Além do plano Grátis, tem acesso a recursos financeiros básicos e à Xep.AI como assistente virtual.
+- **Perfil:** feirantes com vendas recorrentes que desejam aumentar a visibilidade e acompanhar melhor as vendas. Além do plano Semente, tem acesso a recursos financeiros básicos e à Xep.AI como assistente virtual.
 - **Funcionalidades incluídas:**
-  - Todos os recursos do plano Grátis.
+  - Todos os recursos do plano Semente.
   - Acesso básico ao financeiro.
   - Registro e acompanhamento de receitas e gastos.
   - Consulta de informações financeiras básicas.
@@ -55,12 +55,12 @@ O modelo é dividido em três planos: **Grátis**, **Crescer** e **Pro**. Quanto
 
   <br>
 
-#### Plano Pro - R\$ 59,90/mês
+#### Plano Colheita - R\$ 59,90/mês
 - **Comissão:** 5% por venda.
 - **Objetivo:** oferecer controle financeiro completo e ferramentas para administrar e expandir as vendas.
-- **Perfil:** feirantes que vendem regularmente e desejam expandir o negócio. Além do plano Crescer, tem acesso completo à área financeira, destaque de produtos e cestas e suporte prioritário.
+- **Perfil:** feirantes que vendem regularmente e desejam expandir o negócio. Além do plano Broto, tem acesso completo à área financeira, destaque de produtos e cestas e suporte prioritário.
 - **Funcionalidades incluídas:**
-  - Todos os recursos do plano Crescer.
+  - Todos os recursos do plano Broto.
   - Acesso completo ao financeiro.
   - Acompanhamento de receitas, gastos e compras.
   - Visualização de indicadores financeiros e capital de giro.
@@ -72,7 +72,7 @@ O modelo é dividido em três planos: **Grátis**, **Crescer** e **Pro**. Quanto
 
 ### 1.2 Comparação dos Planos
 
-| Funcionalidade | Grátis | Crescer | Pro |
+| Funcionalidade | Semente | Broto | Colheita |
 | :--- | :---: | :---: | :---: |
 | **Mensalidade** | R\$ 0,00 | R\$ 29,90 | R\$ 59,90 |
 | **Comissão por venda** | 15% | 8% | 5% |
@@ -90,7 +90,7 @@ O modelo é dividido em três planos: **Grátis**, **Crescer** e **Pro**. Quanto
 
 Quanto o Xepa+ recebe de comissão em cada venda, sem considerar outros custos:
 
-| Valor da Venda | Grátis (15%) | Crescer (8%) | Pro (5%) |
+| Valor da Venda | Semente (15%) | Broto (8%) | Colheita (5%) |
 | :--- | :---: | :---: | :---: |
 | **R\$ 10,00** | R\$ 1,50 | R\$ 0,80 | R\$ 0,50 |
 | **R\$ 15,00** | R\$ 2,25 | R\$ 1,20 | R\$ 0,75 |
@@ -106,7 +106,7 @@ Quanto o Xepa+ recebe de comissão em cada venda, sem considerar outros custos:
 
 Considerando um feirante que realiza **R\$ 1.000,00** em vendas mensais pelo Xepa+:
 
-| Descrição | Grátis | Crescer | Pro |
+| Descrição | Semente | Broto | Colheita |
 | :--- | :---: | :---: | :---: |
 | **Vendas mensais** | R\$ 1.000,00 | R\$ 1.000,00 | R\$ 1.000,00 |
 | **Mensalidade** | R\$ 0,00 | R\$ 29,90 | R\$ 59,90 |
@@ -118,9 +118,9 @@ Considerando um feirante que realiza **R\$ 1.000,00** em vendas mensais pelo Xep
 
 ### 1.5 Ponto de Equilíbrio entre os Planos
 
-- **Crescer** passa a ser mais barato que o **Grátis** a partir de **R\$ 427,14** em vendas mensais.
-- **Pro** passa a ser mais barato que o **Grátis** a partir de **R\$ 599,00** em vendas mensais.
-- **Pro** passa a ser mais barato que o **Crescer** a partir de **R\$ 1.000,00** em vendas mensais.
+- **Broto** passa a ser mais barato que o **Semente** a partir de **R\$ 427,14** em vendas mensais.
+- **Colheita** passa a ser mais barato que o **Semente** a partir de **R\$ 599,00** em vendas mensais.
+- **Colheita** passa a ser mais barato que o **Broto** a partir de **R\$ 1.000,00** em vendas mensais.
 
 <br>
 
@@ -239,7 +239,7 @@ A divulgação será gradual, priorizando ações de baixo custo e medindo quais
 
 ## 5. Projeção Financeira
 
-A projeção considera vendas médias de **R\$ 1.000,00 por mês** para cada feirante e a distribuição de **60%** no plano Grátis, **30%** no Crescer e **10%** no Pro. Os valores são hipóteses de simulação.
+A projeção considera vendas médias de **R\$ 1.000,00 por mês** para cada feirante e a distribuição de **60%** no plano Semente, **30%** no Broto e **10%** no Colheita. Os valores são hipóteses de simulação.
 
 > **GMV** (volume bruto de vendas) é o total vendido pelos feirantes na plataforma. Ele **não** é a receita do Xepa+; a receita é a parte que fica com a plataforma (comissões + mensalidades).
 
@@ -247,9 +247,9 @@ A projeção considera vendas médias de **R\$ 1.000,00 por mês** para cada fei
 
 | Plano | % | Feirantes | GMV mensal | Comissão | Receita de comissão | Receita de mensalidades | Receita mensal total |
 | :--- | :---: | :---: | :--- | :---: | :--- | :--- | :--- |
-| **Grátis** | 60% | 60 | R\$ 60.000,00 | 15% | R\$ 9.000,00 | R\$ 0,00 | R\$ 9.000,00 |
-| **Crescer** | 30% | 30 | R\$ 30.000,00 | 8% | R\$ 2.400,00 | R\$ 897,00 | R\$ 3.297,00 |
-| **Pro** | 10% | 10 | R\$ 10.000,00 | 5% | R\$ 500,00 | R\$ 599,00 | R\$ 1.099,00 |
+| **Semente** | 60% | 60 | R\$ 60.000,00 | 15% | R\$ 9.000,00 | R\$ 0,00 | R\$ 9.000,00 |
+| **Broto** | 30% | 30 | R\$ 30.000,00 | 8% | R\$ 2.400,00 | R\$ 897,00 | R\$ 3.297,00 |
+| **Colheita** | 10% | 10 | R\$ 10.000,00 | 5% | R\$ 500,00 | R\$ 599,00 | R\$ 1.099,00 |
 | **Total** | **100%** | **100** | **R\$ 100.000,00** | - | **R\$ 11.900,00** | **R\$ 1.496,00** | **R\$ 13.396,00** |
 
 A receita bruta não representa lucro: ainda é preciso descontar custos de tecnologia, suporte, marketing, impostos, taxas de pagamento, reembolsos e demais despesas operacionais.
@@ -269,7 +269,7 @@ A receita bruta não representa lucro: ainda é preciso descontar custos de tecn
 
 ### 5.3 Projeção por Plano
 
-#### Plano Grátis (comissão de 15%)
+#### Plano Semente (comissão de 15%)
 
 | Indicador | 1 ano | 5 anos | 10 anos |
 | :--- | :--- | :--- | :--- |
@@ -278,7 +278,7 @@ A receita bruta não representa lucro: ainda é preciso descontar custos de tecn
 | **Receita mensal (comissões)** | R\$ 9.000,00 | R\$ 90.000,00 | R\$ 450.000,00 |
 | **Receita bruta anual** | R\$ 108.000,00 | R\$ 1.080.000,00 | R\$ 5.400.000,00 |
 
-#### Plano Crescer (R\$ 29,90/mês + comissão de 8%)
+#### Plano Broto (R\$ 29,90/mês + comissão de 8%)
 
 | Indicador | 1 ano | 5 anos | 10 anos |
 | :--- | :--- | :--- | :--- |
@@ -289,7 +289,7 @@ A receita bruta não representa lucro: ainda é preciso descontar custos de tecn
 | **Receita bruta mensal** | R\$ 3.297,00 | R\$ 32.970,00 | R\$ 164.850,00 |
 | **Receita bruta anual** | R\$ 39.564,00 | R\$ 395.640,00 | R\$ 1.978.200,00 |
 
-#### Plano Pro (R\$ 59,90/mês + comissão de 5%)
+#### Plano Colheita (R\$ 59,90/mês + comissão de 5%)
 
 | Indicador | 1 ano | 5 anos | 10 anos |
 | :--- | :--- | :--- | :--- |
