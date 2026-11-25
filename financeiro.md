@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/logo-texto-colorida.png" alt="Logo do Xepa+" width="280">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-texto-branca.png">
+    <img src="assets/logo-texto-colorida.png" alt="Logo do Xepa+" width="280">
+  </picture>
 </p>
 
 # Financeiro - Xepa+
