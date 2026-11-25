@@ -37,20 +37,16 @@ Slogan: **"Mais alimento, menos desperdício."**
 
 # 3. Variações da Logo
 
-A versão principal é a colorida sobre fundo claro e, nos materiais da marca, a versão branca sobre fundo verde. As demais variações são usadas conforme o fundo.
+A logo tem duas variações: a verde, para fundos claros, e a branca, para fundos verdes ou escuros.
 
 <p align="center">
-  <img src="assets/variacoes-logo.png" alt="Variações da logo do Xepa+" width="640">
+  <img src="assets/variacoes-logo.png" alt="Variações da logo do Xepa+: verde e branca" width="640">
 </p>
 
 | Variação | Uso |
 | :--- | :--- |
-| **Colorida** | Fundos claros: site, documentos e redes sociais. |
-| **Branca sobre verde** | Versão principal nos materiais da marca e na apresentação. |
-| **Branca sobre laranja** | Destaques, banners e chamadas. |
-| **Colorida sobre fundo escuro** | Fundos escuros e fotos. |
-| **Monocromática preta** | Impressões em uma cor. |
-| **Símbolo** | Ícone do site, avatar e espaços pequenos. |
+| **Verde** | Fundos claros: site, documentos e redes sociais. |
+| **Branca** | Fundos verdes ou escuros: materiais da marca e apresentação. |
 
 <br>
 
