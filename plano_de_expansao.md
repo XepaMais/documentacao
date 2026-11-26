@@ -17,10 +17,10 @@
    - [Crescimento](#22-crescimento)
    - [Expansão](#23-expansão)
    - [Metas de Cada Fase](#24-metas-de-cada-fase)
-3. [Plano de Crescimento (1, 5 e 10 Anos)](#3-plano-de-crescimento-1-5-e-10-anos)
-   - [Primeiro Ano – São Paulo](#31-primeiro-ano--são-paulo)
-   - [Em Cinco Anos – Expansão Regional](#32-em-cinco-anos--expansão-regional)
-   - [Em Dez Anos – Expansão Nacional](#33-em-dez-anos--expansão-nacional)
+3. [Projeção de Crescimento (2027 a 2030)](#3-projeção-de-crescimento-2027-a-2030)
+   - [2027 – São Paulo](#31-2027--são-paulo)
+   - [Até 2028 – Expansão Regional](#32-até-2028--expansão-regional)
+   - [Até 2030 – Expansão Nacional](#33-até-2030--expansão-nacional)
 4. [Estratégias para Alcançar as Metas](#4-estratégias-para-alcançar-as-metas)
 
 <br>
@@ -84,86 +84,79 @@ O custo estimado de marketing é de **R$ 520,00 por mês** (R$ 6.240,00 por ano)
 
 # 2. Plano de Ação
 
-O plano de ação está organizado em três etapas para tirar o Xepa+ do piloto e levá-lo para todo o Brasil: lançamento, crescimento e expansão, considerando a evolução da plataforma e a adesão de feirantes e consumidores.
+O plano de ação está dividido em três fases para tirar o Xepa+ do piloto e levá-lo para todo o Brasil.
 
 | Fase | Quando | Onde |
 | :--- | :--- | :--- |
 | **01 · Lançamento** | Piloto de 4 semanas | Brasilândia e Freguesia do Ó (Zona Norte de SP) |
-| **02 · Crescimento** | 1º ano | Cidade de São Paulo |
-| **03 · Expansão** | De 5 a 10 anos | Estado de São Paulo e outros estados |
+| **02 · Crescimento** | 2027 | Cidade de São Paulo |
+| **03 · Expansão** | De 2028 a 2030 | Novos estados |
 
 ## 2.1 Lançamento
 
 **Piloto de 4 semanas**, em uma ou duas feiras da Brasilândia e da Freguesia do Ó.
 
-
-- Disponibilizar o plano Semente para atrair feirantes.
+- Disponibilizar o plano gratuito (Semente) para atrair feirantes.
 - Validar a experiência de compra.
 - Testar pedidos e retiradas.
 - Observar a adesão dos feirantes e consumidores.
-- Estabelecer contato com feiras e feirantes.
-- Atrair os primeiros consumidores.
-- Avaliar vendas, custos e satisfação dos usuários.
 
 <br>
 
 ## 2.2 Crescimento
 
-**1º ano**, na cidade de São Paulo.
-
+**2027**, na cidade de São Paulo.
 
 - Divulgar os planos Broto e Colheita conforme a demanda por visibilidade, relatórios e ferramentas for demonstrada.
-- Acompanhar a utilização dos recursos.
+- Lançar o aplicativo Xepa+ para Android e iOS.
 - Avaliar os resultados das vendas e a adesão aos planos pagos.
-- Fortalecer as estratégias de marketing e retenção.
-- Aprimorar relatórios e recursos de controle de estoque.
 
 <br>
 
 ## 2.3 Expansão
 
-**De 5 a 10 anos**, no estado de São Paulo e em outros estados.
+**De 2028 a 2030**, em novos estados.
 
-
-- Avaliar parcerias relacionadas à logística.
-- Aprimorar os dashboards.
-- Adicionar funcionalidades de acordo com as vendas e as necessidades dos usuários.
-- Ampliar o alcance da plataforma para novas regiões.
-- Fortalecer a equipe de tecnologia e suporte.
+- Levar o Xepa+ às feiras livres de novos estados.
+- Oferecer entrega por motoboy até a casa do cliente.
+- Permitir que os feirantes vendam também seus produtos frescos, além das xepas.
 
 <br>
 
 ## 2.4 Metas de Cada Fase
 
-Como a equipe vai saber que cada etapa deu certo antes de avançar para a próxima:
+As metas mostram como a equipe vai saber que cada etapa deu certo antes de avançar para a próxima:
 
 | | Lançamento | Crescimento | Expansão |
 | :--- | :--- | :--- | :--- |
-| **Onde** | Brasilândia e Freguesia do Ó | Cidade de São Paulo | Estado de SP e outros estados |
-| **Meta 1** | 10 feirantes ativos vendendo toda semana | 100 feirantes cadastrados | 1.000 feirantes em 5 anos (regional) |
-| **Meta 2** | 30 pedidos concluídos no piloto | 130 feirantes: ponto de equilíbrio da equipe contratada | 5.000 feirantes em 10 anos (nacional) |
-| **Meta 3** | 90% dos pedidos retirados na barraca | R$ 13,4 mil de receita bruta por mês com 100 feirantes | R$ 8 mi de receita bruta por ano em 10 anos |
+| **Onde** | Brasilândia e Freguesia do Ó | Cidade de São Paulo (2027) | Novos estados (até 2030) |
+| **Meta 1** | 10 feirantes ativos vendendo toda semana | 100 feirantes cadastrados | 1.000 feirantes até 2028 (regional) |
+| **Meta 2** | 30 pedidos concluídos no piloto | 138 feirantes: ponto de equilíbrio da equipe contratada | 5.000 feirantes até 2030 (nacional) |
+| **Meta 3** | 90% dos pedidos retirados na barraca | R$ 13,4 mil de receita bruta por mês com 100 feirantes | R$ 8 mi de receita bruta por ano em 2030 |
 
 <br>
 
-# 3. Plano de Crescimento (1, 5 e 10 Anos)
+# 3. Projeção de Crescimento (2027 a 2030)
 
-A expansão acompanha o aumento do número de feirantes cadastrados e do volume de vendas (GMV) processado pela plataforma.
+O crescimento do Xepa+ está organizado em três horizontes, de 2027 a 2030: a consolidação em São Paulo, a expansão regional e a chegada às feiras livres de todo o Brasil. A expansão acompanha o aumento do número de feirantes cadastrados e do volume de vendas (GMV) processado pela plataforma.
 
 | Horizonte | Abrangência | Meta de feirantes | GMV mensal estimado | Receita bruta anual estimada |
 | :--- | :--- | :---: | :--- | :--- |
-| **1 ano** | São Paulo (capital) | 100 | R$ 100.000,00 | R$ 160.752,00 |
-| **5 anos** | Regional (estado de SP) | 1.000 | R$ 1.000.000,00 | R$ 1.607.520,00 |
-| **10 anos** | Nacional | 5.000 | R$ 5.000.000,00 | R$ 8.037.600,00 |
+| **2027** | São Paulo (capital) | 100 | R$ 100.000,00 | R$ 160.752,00 |
+| **Até 2028** | Regional (estado de SP) | 1.000 | R$ 1.000.000,00 | R$ 1.607.520,00 |
+| **Até 2030** | Nacional | 5.000 | R$ 5.000.000,00 | R$ 8.037.600,00 |
+
+Os valores de GMV e receita seguem a projeção detalhada em [Financeiro](financeiro.md#5-projeção-financeira).
 
 <br>
 
-## 3.1 Primeiro Ano – São Paulo
+## 3.1 2027 – São Paulo
 
 **Meta:** 100 feirantes cadastrados.
 
 - Iniciar a operação em São Paulo, começando pelas feiras da Brasilândia e da Freguesia do Ó (Zona Norte).
 - Desenvolver e validar a plataforma.
+- Lançar o aplicativo Xepa+ para Android e iOS, levando as xepas da feira para a palma da mão.
 - Estabelecer contato com feiras e feirantes.
 - Atrair os primeiros consumidores.
 - Testar os planos de monetização.
@@ -171,7 +164,7 @@ A expansão acompanha o aumento do número de feirantes cadastrados e do volume 
 
 <br>
 
-## 3.2 Em Cinco Anos – Expansão Regional
+## 3.2 Até 2028 – Expansão Regional
 
 **Meta:** 1.000 feirantes cadastrados.
 
@@ -183,15 +176,15 @@ A expansão acompanha o aumento do número de feirantes cadastrados e do volume 
 
 <br>
 
-## 3.3 Em Dez Anos – Expansão Nacional
+## 3.3 Até 2030 – Expansão Nacional
 
 **Meta:** 5.000 feirantes cadastrados.
 
-- Expandir para diferentes estados brasileiros.
+- Levar o Xepa+ às feiras livres de outros estados brasileiros.
 - Atender capitais e outras cidades.
 - Desenvolver parcerias em âmbito nacional.
-- Ampliar a automação, o uso de dados e os recursos de logística.
-- Desenvolver novas funcionalidades.
+- Oferecer entrega por motoboy, levando as compras até a casa do cliente.
+- Permitir que os feirantes vendam também seus produtos frescos, além das xepas.
 - Tornar-se referência no aproveitamento de alimentos e no comércio de feiras.
 
 <br>
@@ -209,6 +202,6 @@ A expansão acompanha o aumento do número de feirantes cadastrados e do volume 
 
 <br>
 
-A expectativa é validar o modelo no primeiro ano, consolidar a operação regional em cinco anos e ampliar a atuação para outras regiões do país em dez anos.
+A expectativa é validar o modelo em 2027, consolidar a operação regional até 2028 e levar o Xepa+ às feiras de outros estados até 2030.
 
 A expansão deverá ocorrer gradualmente, considerando os resultados, a capacidade tecnológica, as estratégias de divulgação e a adesão de feirantes e consumidores.

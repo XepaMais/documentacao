@@ -43,6 +43,18 @@ A amostra reúne 20 respostas, quase todas da Zona Norte de São Paulo, com fort
 | **Tempo como feirante** | Mais de 10 anos: 18 (90%) · 6 a 10 anos: 1 (5%) · 1 a 5 anos: 1 (5%) |
 | **Região de trabalho** | Zona Norte (SP): 19 (95%) · Região Metropolitana (SP): 1 (5%) |
 
+**Produtos mencionados** (a pergunta permitia mais de um produto)
+
+| Produto | Menções |
+| :--- | :---: |
+| Legumes | 7 (35%) |
+| Verduras | 6 (30%) |
+| Frutas | 4 (20%) |
+| Temperos | 3 (15%) |
+| Pastel | 2 (10%) |
+| Carne / Frango / Peixe | 1 (5%) |
+| Tapioca | 1 (5%) |
+
 **Frequência das sobras**
 
 | Resposta | Participantes |
@@ -86,11 +98,21 @@ A amostra reúne 20 respostas, quase todas da Zona Norte de São Paulo, com fort
 - O grupo que respondeu "talvez" quer entender como a ferramenta funcionaria. Vale explicar cadastro, atualização de disponibilidade, retirada e pagamento.
 - As respostas mostram práticas variadas para as sobras: desconto, doação, consumo próprio e reaproveitamento. A plataforma pode complementar essas práticas.
 
+**Respostas abertas:** nas justificativas sobre o que dificulta a venda, os participantes citaram falta de dinheiro entre consumidores, pouco tempo para comprar, preferência por produtos mais escolhidos e perda de qualidade dos produtos no fim da feira.
+
 <br>
 
 # 3. Pesquisa com Consumidores
 
 A pesquisa reuniu 29 respostas, com concentração de pessoas jovens (48% têm de 18 a 28 anos) e residentes na Zona Sul de São Paulo (55%).
+
+**Perfil da amostra**
+
+| Característica | Respostas |
+| :--- | :--- |
+| **Faixa etária** | 18 a 28 anos: 14 (48%) · 29 a 49 anos: 10 (34%) · 50 anos ou mais: 5 (17%) |
+| **Região de moradia** | Zona Sul: 16 (55%) · Zona Leste: 4 (14%) · Zona Norte: 4 (14%) · Zona Oeste: 4 (14%) · Salto (SP): 1 (3%) |
+| **Frequência de compra de hortifrúti** | Uma vez por semana: 13 (45%) · Mais de uma vez por semana: 6 (21%) · A cada 15 dias: 4 (14%) · Uma vez por mês: 4 (14%) · Raramente: 2 (7%) |
 
 **Onde costumam comprar**
 
@@ -111,6 +133,8 @@ A pesquisa reuniu 29 respostas, com concentração de pessoas jovens (48% têm d
 | Aparência dos alimentos | 16 (55%) |
 | Promoções | 7 (24%) |
 | Variedade | 6 (21%) |
+| Praticidade | 4 (14%) |
+| Proximidade do local | 4 (14%) |
 
 **Preço e interesse na xepa**
 

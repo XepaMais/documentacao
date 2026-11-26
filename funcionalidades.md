@@ -19,7 +19,7 @@
 
 O Xepa+ é um site responsivo que conecta feirantes e consumidores em poucos cliques. A página inicial apresenta a proposta e mostra como a plataforma funciona, e o mapa das feiras encontra as feiras mais próximas a partir do CEP.
 
-Site: https://xepa-mais.vercel.app/
+Site: https://xepamais.com.br/
 
 <br>
 

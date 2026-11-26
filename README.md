@@ -17,7 +17,8 @@
    - [ODS 8 – Trabalho Decente e Crescimento Econômico](#ods-8--trabalho-decente-e-crescimento-econômico)
    - [ODS 12 – Consumo e Produção Responsáveis](#ods-12--consumo-e-produção-responsáveis)
 6. [Documentação do Projeto](#6-documentação-do-projeto)
-7. [Links do Projeto](#7-links-do-projeto)
+7. [Equipe](#7-equipe)
+8. [Links do Projeto](#8-links-do-projeto)
 
 <br>
 
@@ -88,9 +89,12 @@ O Xepa+ busca gerar benefícios para os dois lados da plataforma, conectando opo
 
 | | Feirantes | Consumidores |
 | :--- | :--- | :--- |
+| **Público** | Comerciantes de frutas, verduras e legumes com sobras ao final do expediente. | Pessoas que procuram esses alimentos por preços acessíveis. |
 | **Problema** | Dificuldade de encontrar compradores e divulgar as sobras rapidamente. | Preço alto e falta de uma forma simples de encontrar a xepa. |
+| **Evidências** | 95% têm sobras às vezes ou frequentemente; 50% citam a falta de compradores; 80% responderam "sim" ou "talvez" à plataforma. | 86% já deixaram de comprar por causa do preço; 86% priorizam qualidade e frescor; todos responderam "sim" ou "talvez" à cesta de xepa. |
 | **Solução** | Cadastro de produtos, cestas e feiras, pedidos e financeiro conforme o plano. | Ofertas, mapa de feiras, carrinho, pagamento, retirada e receitas. |
-| **Benefício** | Menos perdas, novos clientes e início sem mensalidade. | Economia, alimentos frescos e menos desperdício. |
+| **Benefício** | Menos perdas e desperdício, novos clientes e início sem mensalidade. | Economia, alimentos frescos e aproveitamento do que poderia ser descartado. |
+| **Validação** | Acompanhar adesão, atualização de ofertas, vendas e aceitação das comissões no piloto. | Acompanhar compra real, preço aceito, satisfação com a qualidade e recompra no piloto. |
 
 <br>
 
@@ -148,14 +152,35 @@ A proposta está diretamente relacionada à redução do desperdício de aliment
 | [Identidade visual](identidade_visual.md) | Logo, variações, cores e tipografia. |
 | [Funcionalidades](funcionalidades.md) | Experiência e jornadas do consumidor e do feirante. |
 | [Xep.AI (Xepinha)](xepinha.md) | A assistente virtual do Xepa+. |
-| [Tecnologias](tecnologias.md) | Tecnologias, banco de dados, segurança e infraestrutura. |
-| [Financeiro](financeiro.md) | Planos, custos, receita e investimento. |
-| [Plano de expansão](plano_de_expansao.md) | Divulgação, plano de ação, metas e crescimento. |
+| [Tecnologias](tecnologias.md) | Tecnologias, banco de dados, segurança e hospedagem na AWS. |
+| [Financeiro](financeiro.md) | Planos Semente, Broto e Colheita, custos, receita e investimento. |
+| [Plano de expansão](plano_de_expansao.md) | Divulgação, plano de ação, metas e crescimento de 2027 a 2030. |
 
 
 <br>
 
-# 7. Links do Projeto
+# 7. Equipe
+
+A equipe do Xepa+ é composta por oito integrantes. Além das responsabilidades específicas, todos participaram do desenvolvimento front-end com React e Figma e da elaboração do pitch.
+
+<p align="center">
+  <img src="assets/equipe.png" alt="Equipe do Xepa+" width="640">
+</p>
+
+| Integrante | Responsabilidades |
+| :--- | :--- |
+| **Fernanda Ribeiro** | Área financeira da plataforma e desenvolvimento full stack. Responsável, com o Igor, pela hospedagem, pelas rotas, pelo domínio e pela integração entre back-end e front-end. |
+| **Gabriel Carneiro** | Contato com os feirantes, visitas às feiras e gravação de conteúdo. Também atua no pitch e no desenvolvimento full stack. |
+| **Hadson Silva** | API de mapa das feiras e desenvolvimento full stack. |
+| **Henrique Mazza** | Desenvolvimento da Xepinha, a assistente com inteligência artificial, e elaboração do banco de dados MySQL. |
+| **Igor Aguiar** | Página de receitas e desenvolvimento full stack. Responsável, com a Fernanda, pela hospedagem, pelas rotas, pelo domínio e pela integração entre back-end e front-end. |
+| **Jamilly Moreira** | Organização do projeto, controle de prazos e distribuição das responsabilidades. Também apresenta o pitch. |
+| **Matheus Barros** | Dados e desenvolvimento full stack. |
+| **Murilo Veríssimo** | Marketing e gestão do Instagram, além da elaboração do banco de dados MySQL. |
+
+<br>
+
+# 8. Links do Projeto
 
 | Item | Link |
 | :--- | :--- |

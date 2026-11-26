@@ -162,33 +162,61 @@ Atualmente, o desenvolvimento do Xepa+ é realizado pela própria equipe do proj
 
 ## 3. Custos de Hospedagem e Infraestrutura
 
-A hospedagem será feita em uma **VPS Hostinger KVM 2**, com o **Cloudflare** para proteção e gerenciamento do tráfego. O front-end, o back-end e o banco de dados ficarão no mesmo servidor.
+A hospedagem do Xepa+ será feita na **Amazon Web Services (AWS)**, por meio do **Amazon EC2**, um servidor virtual na nuvem que fica ligado 24 horas por dia. Nele ficam a API em Java com Spring Boot, o banco de dados MySQL e o front-end em React. A cobrança é feita em dólar e só pelo que for usado; por isso, a estrutura pode começar pequena e crescer junto com a plataforma, sem precisar trocar de provedor.
 
-- **Vantagens:** 8 GB de RAM e 100 GB de armazenamento NVMe, suficientes para hospedar todos os componentes no início da operação, com controle total sobre o ambiente.
-- **Limitações:** exige configuração e manutenção do servidor (atualizações, segurança, HTTPS e banco de dados), além de acompanhamento do backup e do consumo de recursos conforme a plataforma crescer.
+- **Vantagens:** a capacidade cresce conforme o uso, há serviços integrados para fotos, e-mails, monitoramento e backups, e a disponibilidade é alta.
+- **Limitações:** o custo varia com o câmbio e o consumo, e o servidor precisa de configuração e manutenção (atualizações, segurança, HTTPS e backups).
 
 <br>
 
-### 3.1 Detalhamento dos Custos
+### 3.1 Serviços da AWS Utilizados
+
+Além do servidor EC2, a estrutura usa o disco **EBS** para armazenar o sistema e os dados, um **IP público fixo** e **snapshots** para as cópias de segurança. As fotos dos produtos ficam no **Amazon S3** e chegam aos usuários pelo **Amazon CloudFront**. Os e-mails da plataforma são enviados pelo **Amazon SES**, e o **Amazon CloudWatch** registra logs e envia alertas sobre o funcionamento. O S3 e o SES ainda serão implementados.
+
+<br>
+
+### 3.2 Detalhamento dos Custos
 
 | Item | Finalidade | Custo |
 | :--- | :--- | :--- |
-| **Hostinger VPS KVM 2** | Hospedagem do front-end, back-end e banco de dados. | R\$ 108,99/mês |
-| **Backup** | Cópias de segurança dos dados, incluídas na hospedagem. | R\$ 0,00 |
-| **Armazenamento de imagens** | Arquivos de imagem no espaço disponível do servidor. | R\$ 0,00 |
-| **Cloudflare (plano gratuito)** | DNS, proteção básica, HTTPS e cache. | R\$ 0,00 |
-| **Domínio .com.br** | Endereço personalizado da plataforma, válido por um ano e renovável. | R\$ 40,00/ano |
-| **MySQL Community** | Banco de dados. | R\$ 0,00 |
-| **API de mapas** | Localização das feiras . | R\$ 0,00 |
+| **Instância EC2 t3.small** | Servidor da API em Java com Spring Boot e do banco de dados MySQL. | US\$ 25,00/mês |
+| **IP público (IPv4)** | Endereço fixo de acesso ao servidor. | US\$ 3,65/mês |
+| **Disco EBS (30 GB)** | Armazenamento do sistema, da aplicação e do banco de dados. | US\$ 4,60/mês |
+| **Backup (snapshots)** | Cópias de segurança do disco. | US\$ 2,00/mês |
+| **Amazon S3** | Armazenamento das fotos dos produtos. | US\$ 1,00/mês |
+| **Amazon CloudFront** | Entrega rápida das fotos aos usuários. | Gratuito |
+| **Amazon SES** | Envio de e-mails da plataforma. | US\$ 0,50/mês |
+| **Amazon CloudWatch** | Logs e alertas de funcionamento. | US\$ 0 a 2,00/mês |
+| **Tráfego de saída** | Dados enviados aos usuários, dentro da faixa gratuita. | Gratuito |
+| **Total AWS (base)** | Valor considerado no orçamento do Xepa+ (cerca de US\$ 37 a 40). | **R\$ 200,00/mês** |
 
 <br>
 
-### 3.2 Custo Total de Hospedagem
+### 3.3 Custo Total de Hospedagem
 
-| Período | Hospedagem | Domínio | Total |
+| Período | Hospedagem (AWS) | Domínio | Total |
 | :--- | :--- | :--- | :--- |
-| **Mensal** | R\$ 108,99 | - | **R\$ 108,99** |
-| **Anual** | R\$ 1.307,88 | R\$ 40,00 | **R\$ 1.347,88** |
+| **Mensal** | R\$ 200,00 | - | **R\$ 200,00** |
+| **Anual** | R\$ 2.400,00 | R\$ 40,00 | **R\$ 2.440,00** |
+
+O domínio será comprado pelo serviço de registro de domínios **.com.br**, por R\$ 40,00 por um ano, com possibilidade de renovação.
+
+Como a cobrança da AWS é feita em dólar, o valor mensal pode variar conforme o câmbio e o uso. Por isso, a equipe acompanhará os gastos pelo painel de custos da AWS, com alertas de orçamento, e ajustará o tamanho dos recursos conforme o crescimento da plataforma.
+
+<br>
+
+### 3.4 Ferramentas Gratuitas para Desenvolvimento
+
+| Ferramenta | Utilização | Observações |
+| :--- | :--- | :--- |
+| **Figma** | Design de interfaces | Prototipação e design das telas antes do desenvolvimento. |
+| **React** | Interfaces do front-end | É necessário um ambiente para publicar a aplicação. |
+| **Java/JDK** | Back-end | Escolher distribuição e versão com licença adequada. |
+| **Spring Boot** | APIs e regras de negócio | Exige configuração, testes e execução no servidor. |
+| **MySQL Community** | Usuários, produtos e pedidos | Instalado na instância EC2; requer administração de usuários, permissões, segurança, atualizações e backups. |
+| **Git** | Controle de versão do código | Apoia o trabalho colaborativo. |
+| **GitHub** | Repositório e organização do código | Não substitui a hospedagem de produção. |
+| **API de mapas** | Localização das feiras | Gratuita, conforme a opção de serviço utilizada. |
 
 <br>
 
@@ -211,8 +239,7 @@ A divulgação combina canais digitais e ações presenciais para alcançar feir
 | **Canva Pro** | Criação de artes e materiais digitais. | R\$ 35,00 |
 | **Panfletos e cartazes** | Materiais impressos para as feiras. | R\$ 150,00 |
 | **Deslocamentos** | Visitas às feiras para apresentar a plataforma. | R\$ 120,00 |
-| **Gestão e comunicação** | Planejamento das publicações e comunicação com o público. | R\$ 30,00 |
-| **Reserva para imprevistos** | Pequenas variações nos gastos. | R\$ 20,00 |
+| **Materiais diversos** | Pequenos materiais de apoio para as ações. | R\$ 50,00 |
 | **Total mensal** | | **R\$ 520,00** |
 
 <br>
@@ -309,67 +336,70 @@ A receita bruta não representa lucro: ainda é preciso descontar custos de tecn
 | Categoria | Mensal | Anual |
 | :--- | :--- | :--- |
 | **Manutenção e operação** | R\$ 800,00 | R\$ 9.600,00 |
-| **Hospedagem (VPS)** | R\$ 108,99 | R\$ 1.307,88 |
+| **Hospedagem (AWS)** | R\$ 200,00 | R\$ 2.400,00 |
 | **Domínio** | - | R\$ 40,00 |
 | **Marketing** | R\$ 520,00 | R\$ 6.240,00 |
-| **Subtotal** | R\$ 1.428,99 | R\$ 17.187,88 |
-| **Reserva para imprevistos (10%)** | R\$ 142,90 | R\$ 1.718,79 |
-| **Total** | **R\$ 1.571,89** | **R\$ 18.906,67** |
+| **Subtotal** | R\$ 1.520,00 | R\$ 18.280,00 |
+| **Reserva para imprevistos (10%)** | R\$ 152,00 | R\$ 1.828,00 |
+| **Total** | **R\$ 1.672,00** | **R\$ 20.108,00** |
 
 ### 6.2 Comparação com a Receita do 1º Ano
 
 | Cenário | Custo mensal | Receita bruta mensal (100 feirantes) | Diferença |
 | :--- | :--- | :--- | :--- |
-| **Fase atual (equipe própria)** | R\$ 1.571,89 | R\$ 13.396,00 | **+ R\$ 11.824,11** |
-| **Com a equipe futura contratada** | R\$ 17.411,89 | R\$ 13.396,00 | **- R\$ 4.015,89** |
+| **Fase atual (equipe própria)** | R\$ 1.672,00 | R\$ 13.396,00 | **+ R\$ 11.724,00** |
+| **Com a equipe futura contratada** | R\$ 18.392,00 | R\$ 13.396,00 | **- R\$ 4.996,00** |
 
 <br>
 
-Com a equipe própria, a receita estimada do primeiro ano cobre os custos operacionais. A contratação da equipe futura (R\$ 15.200,00/mês em salários, R\$ 17.411,89/mês com hospedagem, marketing e reserva) só se sustenta com uma base maior de feirantes - considerando a mesma receita média por feirante (R\$ 133,96/mês), seriam necessários cerca de **130 feirantes ativos** (ponto de equilíbrio da equipe).
+Com a equipe própria, a receita estimada do primeiro ano cobre os custos operacionais. A contratação da equipe futura (R\$ 15.200,00/mês em salários, R\$ 18.392,00/mês com hospedagem, marketing, manutenção e reserva) só se sustenta com uma base maior de feirantes: considerando a receita média de **R\$ 133,96 por feirante por mês** (R\$ 13.396,00 divididos por 100 feirantes), a equipe passa a se pagar a partir de cerca de **138 feirantes ativos**.
 
 <br>
 
 ## 7. Investimento Necessário
 
-O cenário inicial considera o desenvolvimento pela própria equipe. O cenário com equipe contratada serve de referência para a continuidade do projeto, quando houver receita ou captação de recursos.
+O investimento necessário para colocar o Xepa+ no mercado foi calculado a partir dos custos apresentados neste documento. O cenário inicial considera o desenvolvimento pela própria equipe. O cenário com equipe contratada serve de referência para a continuidade do projeto, quando houver receita ou captação de recursos.
 
 ### 7.1 Cenário Inicial: Equipe Própria
 
 | Item | Mensal | 3 meses | 1 ano |
 | :--- | :--- | :--- | :--- |
-| **Hospedagem** | R\$ 108,99 | R\$ 326,97 | R\$ 1.307,88 |
-| **Domínio** | - | R\$ 40,00 | R\$ 40,00 |
+| **Hospedagem (AWS)** | R\$ 200,00 | R\$ 600,00 | R\$ 2.400,00 |
+| **Domínio** | - | - | R\$ 40,00 |
 | **Marketing** | R\$ 520,00 | R\$ 1.560,00 | R\$ 6.240,00 |
 | **Manutenção e operações** | R\$ 800,00 | R\$ 2.400,00 | R\$ 9.600,00 |
 | **Desenvolvimento inicial** | R\$ 0,00 | R\$ 0,00 | R\$ 0,00 |
-| **Subtotal** | R\$ 1.428,99 | R\$ 4.326,97 | R\$ 17.187,88 |
-| **Reserva para imprevistos (10%)** | R\$ 142,90 | R\$ 432,70 | R\$ 1.718,79 |
-| **Total** | **R\$ 1.571,89** | **R\$ 4.759,67** | **R\$ 18.906,67** |
+| **Subtotal** | R\$ 1.520,00 | R\$ 4.560,00 | R\$ 18.280,00 |
+| **Reserva para imprevistos (10%)** | R\$ 152,00 | R\$ 456,00 | R\$ 1.828,00 |
+| **Total** | **R\$ 1.672,00** | **R\$ 5.016,00** | **R\$ 20.108,00** |
+
+O investimento definido para iniciar a operação é de **R\$ 20.108,00 no primeiro ano**, sendo **R\$ 5.016,00 para os três primeiros meses** de validação.
 
 ### 7.2 Cenário com Equipe Contratada
 
 | Item | Mensal | 3 meses | 1 ano |
 | :--- | :--- | :--- | :--- |
-| **Hospedagem** | R\$ 108,99 | R\$ 326,97 | R\$ 1.307,88 |
-| **Domínio** | - | R\$ 40,00 | R\$ 40,00 |
+| **Hospedagem (AWS)** | R\$ 200,00 | R\$ 600,00 | R\$ 2.400,00 |
+| **Domínio** | - | - | R\$ 40,00 |
 | **Marketing** | R\$ 520,00 | R\$ 1.560,00 | R\$ 6.240,00 |
+| **Manutenção e operações** | R\$ 800,00 | R\$ 2.400,00 | R\$ 9.600,00 |
 | **Salários da equipe (4 profissionais)** | R\$ 15.200,00 | R\$ 45.600,00 | R\$ 182.400,00 |
-| **Subtotal** | R\$ 15.828,99 | R\$ 47.526,97 | R\$ 189.987,88 |
-| **Reserva para imprevistos (10%)** | R\$ 1.582,90 | R\$ 4.752,70 | R\$ 18.998,79 |
-| **Total** | **R\$ 17.411,89** | **R\$ 52.279,67** | **R\$ 208.986,67** |
+| **Subtotal** | R\$ 16.720,00 | R\$ 50.160,00 | R\$ 200.680,00 |
+| **Reserva para imprevistos (10%)** | R\$ 1.672,00 | R\$ 5.016,00 | R\$ 20.068,00 |
+| **Total** | **R\$ 18.392,00** | **R\$ 55.176,00** | **R\$ 220.748,00** |
 
-No cenário com equipe contratada, a manutenção e as operações passam a ser feitas pelos profissionais contratados, por isso esse custo não é somado aos salários.
+No cenário com equipe contratada, os custos de manutenção e operações, de R\$ 800,00 por mês, continuam sendo somados aos salários da equipe.
 
 ### 7.3 Para Onde Vai o Investimento (equipe contratada, 1 ano)
 
 | Área | Valor anual | Participação |
 | :--- | :--- | :---: |
-| **Desenvolvimento** | R\$ 74.400,00 | 35,6% |
-| **Gestão** | R\$ 60.000,00 | 28,7% |
-| **Marketing e design** | R\$ 30.240,00 | 14,5% |
-| **Atendimento e operações** | R\$ 24.000,00 | 11,5% |
-| **Reserva para imprevistos** | R\$ 18.998,79 | 9,1% |
-| **Infraestrutura (Hostinger + domínio)** | R\$ 1.347,88 | 0,6% |
-| **Total** | **R\$ 208.986,67** | **100%** |
+| **Desenvolvimento** | R\$ 74.400,00 | 33,7% |
+| **Gestão** | R\$ 60.000,00 | 27,2% |
+| **Atendimento e operações** | R\$ 33.600,00 | 15,2% |
+| **Marketing e design** | R\$ 30.240,00 | 13,7% |
+| **Reserva para imprevistos** | R\$ 20.068,00 | 9,1% |
+| **Infraestrutura (AWS + domínio)** | R\$ 2.440,00 | 1,1% |
+| **Total** | **R\$ 220.748,00** | **100%** |
 
 Os valores não incluem impostos, taxas dos meios de pagamento, encargos trabalhistas, custos de uso da inteligência artificial e eventuais entregas. Esses itens devem ser estimados antes do lançamento e confirmados com os fornecedores.
