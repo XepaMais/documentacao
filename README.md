@@ -5,48 +5,46 @@
   </picture>
 </p>
 
+# 1. O que é o Xepa+
 
-**Sumário**
+O Xepa+ é uma plataforma digital que conecta feirantes a consumidores interessados em comprar frutas, verduras e legumes que sobraram ao final das feiras livres por preços mais acessíveis. A proposta busca reduzir o desperdício de alimentos, diminuir as perdas financeiras dos feirantes e facilitar o acesso da população a produtos frescos com preços menores.
 
-1. [Apresentação do Xepa+](#1-apresentação-do-xepa)
-2. [Problema e Solução](#2-problema-e-solução)
-3. [Proposta de Valor](#3-proposta-de-valor)
-4. [Missão, Visão e Valores](#4-missão-visão-e-valores)
-5. [Impacto e Objetivos de Desenvolvimento Sustentável](#5-objetivos-de-desenvolvimento-sustentável)
-   - [ODS 2 – Fome Zero e Agricultura Sustentável](#ods-2--fome-zero-e-agricultura-sustentável)
-   - [ODS 8 – Trabalho Decente e Crescimento Econômico](#ods-8--trabalho-decente-e-crescimento-econômico)
-   - [ODS 12 – Consumo e Produção Responsáveis](#ods-12--consumo-e-produção-responsáveis)
-6. [Documentação do Projeto](#6-documentação-do-projeto)
-7. [Equipe](#7-equipe)
-8. [Links do Projeto](#8-links-do-projeto)
+A plataforma permite divulgar produtos, apresentar ofertas, aproximar consumidores dos feirantes e facilitar a localização de feiras com alimentos disponíveis. O projeto também considera recursos para cadastro de produtos, carrinho, pedidos, pagamento, mapa de feiras, receitas, área financeira e funcionalidades relacionadas à inteligência artificial.
+
+| Pilar | O que significa |
+| :--- | :--- |
+| **Menos desperdício** | Novo destino para alimentos ainda próprios para consumo. |
+| **Menos perdas** | Mais uma chance de venda para o feirante. |
+| **Mais acesso** | Alimentos frescos com preços menores. |
+
+## 1.1 Motivação
+
+A base principal para a criação do Xepa+ veio da realidade de Fabiane Carneiro e Aroaldo Sandes, feirantes da Zona Norte de São Paulo. A rotina dos dois mostrou à equipe o que acontece no encerramento da feira: alimentos ainda próprios para consumo que não encontram comprador a tempo e acabam vendidos com grande desconto, doados, levados para casa ou descartados.
+
+A pesquisa de campo confirmou que a situação se repete: 95% dos feirantes que responderam têm sobras às vezes ou frequentemente, e 86% dos consumidores já deixaram de comprar frutas, verduras ou legumes por causa do preço.
+
+## 1.2 Missão, visão e valores
+
+Missão: reduzir o desperdício de alimentos, dando um novo destino às frutas, verduras e legumes que sobram após as feiras livres, conectando feirantes a consumidores e tornando esses alimentos mais acessíveis.
+
+Visão: ser referência no aproveitamento de alimentos pós-feira, promovendo um modelo de negócio sustentável, acessível e eficiente, que gere valor para consumidores, feirantes e parceiros.
+
+Valores:
+
+- Sustentabilidade.
+- Acessibilidade.
+- Transparência.
+- Compromisso social.
 
 <br>
 
-# 1. Apresentação do Xepa+
+# 2. Contexto e problema
 
+Ao final das feiras livres, muitos feirantes ainda possuem frutas, verduras e legumes que não foram vendidos. Mesmo quando esses alimentos continuam próprios para consumo, parte deles pode acabar sendo descartada por falta de compradores ou de alternativas para a comercialização. O principal problema é a dificuldade de comercializar rapidamente os alimentos que sobram no final das feiras, mesmo quando ainda podem ser consumidos.
 
-O Xepa+ é uma plataforma digital que conecta feirantes a consumidores interessados em comprar frutas, verduras e legumes que sobraram ao final das feiras livres por preços mais acessíveis.
+Essa situação representa uma oportunidade de reduzir as perdas financeiras dos comerciantes e facilitar o acesso da população a alimentos mais baratos. O Xepa+ surge para conectar essas duas necessidades por meio de uma plataforma digital que permite divulgar produtos, apresentar ofertas e aproximar consumidores dos feirantes.
 
-A proposta busca reduzir o desperdício de alimentos, diminuir as perdas financeiras dos feirantes e facilitar o acesso da população a produtos frescos com preços menores.
-
-## Motivação
-
-A base principal para a criação do Xepa+ veio da realidade de **Fabiane Carneiro** e **Aroaldo Sandes**, feirantes da Zona Norte de São Paulo. A rotina dos dois mostrou à equipe o que acontece no encerramento da feira: alimentos ainda próprios para consumo que não encontram comprador a tempo e acabam vendidos com grande desconto, doados, levados para casa ou descartados.
-
-A pesquisa de campo confirmou que a situação se repete: **95%** dos feirantes que responderam têm sobras às vezes ou frequentemente, e **86%** dos consumidores já deixaram de comprar frutas, verduras ou legumes por causa do preço. 
-Na fase inicial, o foco está na validação do modelo em uma ou duas feiras da região da **Brasilândia** e da **Freguesia do Ó**, na Zona Norte de São Paulo.
-
-<br>
-
-# 2. Problema e Solução
-
-## Problema identificado
-
-Ao final das feiras, parte dos alimentos ainda próprios para consumo pode não encontrar compradores. Os feirantes precisam lidar com essas sobras, que podem ser vendidas com grandes descontos, doadas, levadas para casa ou descartadas.
-
-Ao mesmo tempo, consumidores interessados em economizar nem sempre sabem onde encontrar produtos disponíveis na xepa.
-
-### Dados sobre desperdício e acesso a alimentos
+## 2.1 Dados sobre desperdício e acesso a alimentos
 
 | Indicador | Dado | Fonte |
 | :--- | :--- | :--- |
@@ -56,139 +54,119 @@ Ao mesmo tempo, consumidores interessados em economizar nem sempre sabem onde en
 | **Desperdício nas feiras de SP** | De 14,9 mil a 18,4 mil toneladas de resíduos comestíveis por ano. | Unesp e Universidade de Borås (2022) |
 | **Região do piloto** | 27 feiras livres na subprefeitura Freguesia/Brasilândia. | Lista oficial de feiras da Prefeitura |
 
-## Solução proposta
+<br>
 
-O Xepa+ oferece um canal digital para que os feirantes divulguem seus produtos e para que os consumidores encontrem ofertas em feiras próximas.
+# 3. Público-alvo
 
-A solução busca transformar alimentos que poderiam não ser vendidos em uma oportunidade de renda para o feirante e de economia para o consumidor.
+O Xepa+ atende dois públicos principais: feirantes que precisam vender os produtos excedentes e consumidores que buscam economizar nas compras de alimentos.
 
-| Feirante | Xepa+ | Consumidor |
-| :---: | :---: | :---: |
-| Cadastra a xepa com foto, preço e janela de retirada. | Mostra as ofertas no catálogo e no mapa das feiras. | Encontra a oferta, paga pelo site e retira na barraca. |
+Feirantes: comerciantes que vendem frutas, verduras e legumes em feiras livres e que podem permanecer com produtos não vendidos ao final do expediente. Parte dos feirantes pode ter pouca familiaridade com ferramentas digitais e preocupação com taxas de utilização. Por isso, a experiência deve ser simples, com funcionalidades fáceis de entender e utilizar.
+
+Consumidores: pessoas que procuram frutas, verduras e legumes por preços acessíveis e que desejam encontrar ofertas em feiras próximas.
 
 <br>
 
-# 3. Proposta de Valor
+# 4. A solução
 
-O Xepa+ busca gerar benefícios para os dois lados da plataforma, conectando oportunidades de venda e consumo consciente.
+Para feirantes que ficam com frutas, verduras e legumes ao final da feira e para consumidores que desejam economizar, o Xepa+ é uma plataforma digital que conecta as duas pontas: o feirante divulga e vende o que sobrou, e o consumidor encontra feiras próximas e compra esses alimentos por preços mais acessíveis.
 
-**Para os feirantes:**
-- Ampliar as oportunidades de comercialização dos produtos excedentes.
-- Reduzir perdas financeiras.
-- Aproveitar melhor os alimentos disponíveis.
-- Criar novas oportunidades de venda.
+| Quem | O que faz |
+| :--- | :--- |
+| **Feirante** | Cadastra a xepa com foto, preço e janela de retirada. |
+| **Xepa+** | Mostra as ofertas no catálogo e no mapa das feiras. |
+| **Consumidor** | Encontra a oferta, paga pelo app e reserva. |
 
-**Para os consumidores:**
-- Facilitar o acesso a alimentos por preços mais acessíveis.
-- Incentivar a economia nas compras.
-- Estimular o consumo consciente.
-- Aproveitar produtos que ainda estão próprios para consumo.
+## 4.1 Plataforma
 
-<br>
+O Xepa+ é um site responsivo que conecta feirantes e consumidores em poucos cliques. A página inicial apresenta a proposta e mostra como a plataforma funciona, e o mapa das feiras encontra as feiras mais próximas a partir do CEP.
 
+Na área do consumidor, é possível encontrar feiras próximas, ver as ofertas da hora da xepa, montar o carrinho, pagar com Pix, retirar o pedido na barraca com o código de retirada, conversar com o feirante e acompanhar o próprio impacto.
 
-| | Feirantes | Consumidores |
-| :--- | :--- | :--- |
-| **Público** | Comerciantes de frutas, verduras e legumes com sobras ao final do expediente. | Pessoas que procuram esses alimentos por preços acessíveis. |
-| **Problema** | Dificuldade de encontrar compradores e divulgar as sobras rapidamente. | Preço alto e falta de uma forma simples de encontrar a xepa. |
-| **Evidências** | 95% têm sobras às vezes ou frequentemente; 50% citam a falta de compradores; 80% responderam "sim" ou "talvez" à plataforma. | 86% já deixaram de comprar por causa do preço; 86% priorizam qualidade e frescor; todos responderam "sim" ou "talvez" à cesta de xepa. |
-| **Solução** | Cadastro de produtos, cestas e feiras, pedidos e financeiro conforme o plano. | Ofertas, mapa de feiras, carrinho, pagamento, retirada e receitas. |
-| **Benefício** | Menos perdas e desperdício, novos clientes e início sem mensalidade. | Economia, alimentos frescos e aproveitamento do que poderia ser descartado. |
-| **Validação** | Acompanhar adesão, atualização de ofertas, vendas e aceitação das comissões no piloto. | Acompanhar compra real, preço aceito, satisfação com a qualidade e recompra no piloto. |
+Na área do feirante, é possível cadastrar xepas e publicar as ofertas do dia, registrar as feiras onde trabalha, acompanhar os pedidos e confirmar a entrega, conversar com os clientes e controlar lucros, despesas e planilhas no financeiro.
 
-<br>
+## 4.2 Xep.AI (Xepinha)
 
-## Diferencial
+A Xepinha é a assistente virtual do Xepa+, criada para tornar a experiência mais simples, prática e divertida. Representada por uma pera, ela tira dúvidas na hora sobre pedidos, planos e o uso da plataforma e ajuda o feirante no dia a dia da banca, orientando o cadastro de xepas e a organização do financeiro. Foi criada com a API Gemini e está disponível nos planos Broto e Colheita.
 
-O Xepa+ é direcionado à realidade das feiras livres e coloca o feirante como vendedor principal. Sua proposta combina tecnologia, sustentabilidade e inclusão econômica, oferecendo uma alternativa para melhorar o aproveitamento dos alimentos que sobram após as feiras.
+<p align="center">
+  <img src="assets/xepinha.jpeg" alt="Xepinha, mascote da Xep.AI" width="202">
+</p>
+
+<p align="center"><sub>Figura 1 – Xepinha, mascote da Xep.AI</sub></p>
+
+## 4.3 Diferenciais
 
 - Foco nas feiras livres e no feirante como vendedor.
 - Cestas com conteúdo informado, sem o modelo de sacola surpresa.
 - Modelo de entrada sem mensalidade, com planos pagos opcionais.
 - Benefício duplo: renda para o feirante e economia para o consumidor, alinhados à redução do desperdício.
 
+## 4.4 Tecnologias
 
-<br>
-
-# 4. Missão, Visão e Valores
-
-**Missão:** Reduzir o desperdício de alimentos, dando um novo destino às frutas, verduras e legumes que sobram após as feiras livres, conectando feirantes a consumidores e tornando esses alimentos mais acessíveis.
-
-**Visão:** Ser referência no aproveitamento de alimentos pós-feira, promovendo um modelo de negócio sustentável, acessível e eficiente, que gere valor para consumidores, feirantes e parceiros.
-
-**Valores:**
-- Sustentabilidade.
-- Acessibilidade.
-- Transparência.
-- Compromisso social.
+Front-end em React, JavaScript, HTML e CSS; back-end em Java com Spring Boot; banco de dados MySQL; integração por API REST; hospedagem na Amazon EC2 (AWS); API Gemini na Xep.AI; Figma para os protótipos e Git e GitHub para o versionamento.
 
 <br>
 
 # 5. Objetivos de Desenvolvimento Sustentável
 
-O Xepa+ está alinhado aos Objetivos de Desenvolvimento Sustentável (ODS) da Organização das Nações Unidas (ONU), especialmente aos objetivos 2, 8 e 12.
+O Xepa+ está alinhado a três Objetivos de Desenvolvimento Sustentável (ODS) estabelecidos pela Organização das Nações Unidas (ONU). A escolha está relacionada à proposta da plataforma de reduzir o desperdício de alimentos, valorizar o trabalho dos feirantes e incentivar o aproveitamento de produtos que ainda podem ser consumidos.
 
-
-## ODS 2 – Fome Zero e Agricultura Sustentável
-
-O projeto contribui para esse objetivo ao facilitar o acesso a frutas, verduras e legumes por preços mais acessíveis. O aproveitamento dos alimentos que sobram ao final das feiras amplia as possibilidades de consumo de produtos frescos e incentiva o uso mais eficiente dos alimentos disponíveis.
-
-## ODS 8 – Trabalho Decente e Crescimento Econômico
-
-A plataforma busca apoiar pequenos comerciantes por meio de um canal digital para divulgar produtos e atrair consumidores. Com isso, pretende contribuir para a redução das perdas financeiras dos feirantes, o aproveitamento de mercadorias que poderiam não ser vendidas e a geração de oportunidades de renda.
-
-## ODS 12 – Consumo e Produção Responsáveis
-
-A proposta está diretamente relacionada à redução do desperdício de alimentos. Ao conectar feirantes e consumidores, o Xepa+ incentiva o consumo consciente, a utilização mais eficiente dos recursos e práticas mais sustentáveis.
+| ODS | Como o Xepa+ contribui |
+| :--- | :--- |
+| **ODS 2 – Fome Zero e Agricultura Sustentável** | Facilita o acesso a frutas, verduras e legumes por preços mais acessíveis, aproveitando alimentos que sobraram ao final das feiras livres. |
+| **ODS 8 – Trabalho Decente e Crescimento Econômico** | Apoia os pequenos comerciantes com um canal digital para divulgar produtos, reduzir perdas financeiras e gerar oportunidades de renda. |
+| **ODS 12 – Consumo e Produção Responsáveis** | Reduz o desperdício de alimentos ao aproveitar os produtos que sobram após as feiras e incentiva o consumo consciente. |
 
 <br>
 
-# 6. Documentação do Projeto
+# 6. Modelo de negócio e plano de ação
 
-| Documento | Conteúdo |
-| :--- | :--- |
-| [Público-alvo e personas](publico_alvo.md) | Quem o Xepa+ atende e as duas personas do projeto. |
-| [Pesquisa de campo](pesquisa_de_campo.md) | Resultados dos questionários com feirantes e consumidores. |
-| [Identidade visual](identidade_visual.md) | Logo, variações, cores e tipografia. |
-| [Funcionalidades](funcionalidades.md) | Experiência e jornadas do consumidor e do feirante. |
-| [Xep.AI (Xepinha)](xepinha.md) | A assistente virtual do Xepa+. |
-| [Tecnologias](tecnologias.md) | Tecnologias, banco de dados, segurança e hospedagem na AWS. |
-| [Financeiro](financeiro.md) | Planos Semente, Broto e Colheita, custos, receita e investimento. |
-| [Plano de expansão](plano_de_expansao.md) | Divulgação, plano de ação, metas e crescimento de 2027 a 2030. |
+O Xepa+ adotará um modelo híbrido de monetização, combinando mensalidades opcionais e comissões sobre as vendas realizadas pela plataforma. Quanto maior o plano contratado, menor será a comissão cobrada por venda e maior será a quantidade de ferramentas disponíveis.
 
+| Plano | Mensalidade | Comissão por venda |
+| :--- | :--- | :--- |
+| **Semente** | R$ 0,00 | 15% |
+| **Broto** | R$ 29,90 | 8% |
+| **Colheita** | R$ 59,90 | 5% |
 
-<br>
+## 6.1 Plano de ação
 
-# 7. Equipe
-
-A equipe do Xepa+ é composta por oito integrantes. Além das responsabilidades específicas, todos participaram do desenvolvimento front-end com React e Figma e da elaboração do pitch.
-
-<p align="center">
-  <img src="assets/equipe.png" alt="Equipe do Xepa+" width="640">
-</p>
-
-| Integrante | Responsabilidades |
-| :--- | :--- |
-| **Fernanda Ribeiro** | Área financeira da plataforma e desenvolvimento full stack. Responsável, com o Igor, pela hospedagem, pelas rotas, pelo domínio e pela integração entre back-end e front-end. |
-| **Gabriel Carneiro** | Contato com os feirantes, visitas às feiras e gravação de conteúdo. Também atua no pitch e no desenvolvimento full stack. |
-| **Hadson Silva** | API de mapa das feiras e desenvolvimento full stack. |
-| **Henrique Mazza** | Desenvolvimento da Xepinha, a assistente com inteligência artificial, e elaboração do banco de dados MySQL. |
-| **Igor Aguiar** | Página de receitas e desenvolvimento full stack. Responsável, com a Fernanda, pela hospedagem, pelas rotas, pelo domínio e pela integração entre back-end e front-end. |
-| **Jamilly Moreira** | Organização do projeto, controle de prazos e distribuição das responsabilidades. Também apresenta o pitch. |
-| **Matheus Barros** | Dados e desenvolvimento full stack. |
-| **Murilo Veríssimo** | Marketing e gestão do Instagram, além da elaboração do banco de dados MySQL. |
+| Fase | Quando e onde | Ações |
+| :--- | :--- | :--- |
+| **Lançamento** | Piloto de 4 semanas, na Brasilândia e na Freguesia do Ó | Disponibilizar o plano gratuito para atrair feirantes, validar a experiência de compra, testar pedidos e retiradas e observar a adesão. |
+| **Crescimento** | 2027, na cidade de São Paulo | Divulgar os planos Broto e Colheita, lançar o aplicativo para Android e iOS e avaliar as vendas e a adesão aos planos pagos. |
+| **Expansão** | De 2028 a 2030, em novos estados | Levar o Xepa+ às feiras livres de novos estados, oferecer entrega por motoboy e permitir a venda de produtos frescos além das xepas. |
 
 <br>
 
-# 8. Links do Projeto
+# 7. Conclusão
 
-| Item | Link |
-| :--- | :--- |
-| **Site do Xepa+** | https://xepamais.com.br |
-| **Agregador de links** | https://linktr.ee/xepa.mais |
-| **GitHub** | https://github.com/XepaMais |
-| **Figma** | [Protótipo do Xepa+ no Figma](https://www.figma.com/design/5Nw6zLHUqIYhwYY50plLAZ/XEPA-?node-id=0-1&p=f&t=vl4HczMBfvlPGG1F-0) |
-| **Trello** | https://trello.com/b/JAWsBfvE/inclusive |
-| **Instagram** | [@xepa_mais](https://www.instagram.com/xepa_mais) |
-| **LinkedIn** | https://linkedin.com/company/xepamais |
-| **E-mail** | xepamais8@gmail.com |
+O Xepa+ nasceu de um problema comum nas feiras livres: ao fim do dia, muitos alimentos ainda bons para consumo sobram nas barracas e acabam vendidos com prejuízo ou jogados fora. A plataforma liga o feirante que precisa vender essas xepas ao consumidor que quer comprar alimentos frescos por um preço menor. Assim, o que seria desperdício vira renda para quem vende e economia para quem compra.
+
+O projeto mostra que é possível começar com pouco investimento e crescer de forma planejada. O primeiro passo é validar o modelo com os feirantes, conquistar consumidores e controlar os custos. A partir disso, a plataforma pode ganhar o aplicativo, a entrega por motoboy e a venda de produtos frescos além das xepas.
+
+Mais do que uma plataforma de vendas, o Xepa+ é uma proposta de impacto social e ambiental. A plataforma valoriza o trabalho do feirante, aproxima as pessoas das feiras do bairro e combate o desperdício de alimentos.
+
+<br>
+
+# Documentação
+
+Os documentos seguem a mesma ordem da pasta do Drive. Cada um tem versão em Markdown, Word e PDF.
+
+| Documento | Word | PDF |
+| :--- | :--- | :--- |
+| **1. Apresentação do projeto** | [01-apresentacao-do-projeto.docx](word/01-apresentacao-do-projeto.docx) | [01-apresentacao-do-projeto.pdf](pdf/01-apresentacao-do-projeto.pdf) |
+| **2.** [Integrantes](02-integrantes.md) | [02-integrantes.docx](word/02-integrantes.docx) | [02-integrantes.pdf](pdf/02-integrantes.pdf) |
+| **3.** [Links do projeto](03-links-do-projeto.md) | [03-links-do-projeto.docx](word/03-links-do-projeto.docx) | [03-links-do-projeto.pdf](pdf/03-links-do-projeto.pdf) |
+| **4.** [Identidade visual](04-identidade-visual.md) | [04-identidade-visual.docx](word/04-identidade-visual.docx) | [04-identidade-visual.pdf](pdf/04-identidade-visual.pdf) |
+| **5.** [Pesquisas](05-pesquisas.md) | [05-pesquisas.docx](word/05-pesquisas.docx) | [05-pesquisas.pdf](pdf/05-pesquisas.pdf) |
+| **6.** [Proposta de valor e mercado](06-proposta-de-valor-e-mercado.md) | [06-proposta-de-valor-e-mercado.docx](word/06-proposta-de-valor-e-mercado.docx) | [06-proposta-de-valor-e-mercado.pdf](pdf/06-proposta-de-valor-e-mercado.pdf) |
+| **7.** [Jornada do usuário](07-jornada-do-usuario.md) | [07-jornada-do-usuario.docx](word/07-jornada-do-usuario.docx) | [07-jornada-do-usuario.pdf](pdf/07-jornada-do-usuario.pdf) |
+| **8.** [Financeiro](08-financeiro.md) | [08-financeiro.docx](word/08-financeiro.docx) | [08-financeiro.pdf](pdf/08-financeiro.pdf) |
+| **9.** [Tecnologias](09-tecnologias.md) | [09-tecnologias.docx](word/09-tecnologias.docx) | [09-tecnologias.pdf](pdf/09-tecnologias.pdf) |
+
+<br>
+
+---
+
+<p align="center"><a href="02-integrantes.md">2. Integrantes →</a></p>
