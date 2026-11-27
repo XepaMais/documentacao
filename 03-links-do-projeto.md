@@ -7,14 +7,12 @@
 
 # Links do projeto
 
-<br>
-
-# Links do projeto
-
 | Item | Link |
 | :--- | :--- |
 | **Site do Xepa+** | [https://xepamais.com.br/](https://xepamais.com.br/) |
 | **GitHub** | [https://github.com/XepaMais](https://github.com/XepaMais) |
+| **Documentação da API (Swagger)** | [https://xepamais.com.br/api/docs](https://xepamais.com.br/api/docs) |
+| **Banco de dados (scripts e dicionário)** | [https://github.com/XepaMais/database](https://github.com/XepaMais/database) |
 | **Figma** | [Protótipo do Xepa+ no Figma](https://www.figma.com/design/5Nw6zLHUqIYhwYY50plLAZ/XEPA-?node-id=0-1&p=f&t=vl4HczMBfvlPGG1F-0) |
 | **Trello** | [https://trello.com/b/JAWsBfvE/inclusive](https://trello.com/b/JAWsBfvE/inclusive) |
 | **Drive** | [https://drive.google.com/drive/folders/1CCV-396h58LKcWAGL3VJ0c5VaQ9GcCdR?usp=sharing](https://drive.google.com/drive/folders/1CCV-396h58LKcWAGL3VJ0c5VaQ9GcCdR?usp=sharing) |

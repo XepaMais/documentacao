@@ -151,7 +151,7 @@ Mais do que uma plataforma de vendas, o Xepa+ é uma proposta de impacto social 
 
 # Documentação
 
-Os documentos seguem a mesma ordem da pasta do Drive. Cada um tem versão em Markdown, Word e PDF.
+Os documentos seguem a mesma ordem da pasta do Drive. Do 1 ao 9 há versão em Markdown, Word e PDF; o 10 e o 11 estão em Markdown.
 
 | Documento | Word | PDF |
 | :--- | :--- | :--- |
@@ -164,6 +164,8 @@ Os documentos seguem a mesma ordem da pasta do Drive. Cada um tem versão em Mar
 | **7.** [Jornada do usuário](07-jornada-do-usuario.md) | [07-jornada-do-usuario.docx](word/07-jornada-do-usuario.docx) | [07-jornada-do-usuario.pdf](pdf/07-jornada-do-usuario.pdf) |
 | **8.** [Financeiro](08-financeiro.md) | [08-financeiro.docx](word/08-financeiro.docx) | [08-financeiro.pdf](pdf/08-financeiro.pdf) |
 | **9.** [Tecnologias](09-tecnologias.md) | [09-tecnologias.docx](word/09-tecnologias.docx) | [09-tecnologias.pdf](pdf/09-tecnologias.pdf) |
+| **10.** [Escalabilidade](10-escalabilidade.md) | — | — |
+| **11.** [LGPD e privacidade](11-lgpd.md) | — | — |
 
 <br>
 

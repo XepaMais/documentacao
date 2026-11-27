@@ -11,7 +11,9 @@
 
 # 1. Banco de dados
 
-O banco de dados do Xepa+ foi implementado em MySQL 8 pelo script xepaDB 1.0 e é acessado pelo back-end em Java com Spring Boot, por meio de uma API REST. O banco possui 25 tabelas, organizadas em cinco grupos: contas e acesso, feiras e ofertas, compra, comunicação, e receitas e financeiro.
+O banco de dados do Xepa+ foi implementado em MySQL 8 e é acessado só pelo back-end em Java com Spring Boot, por meio de uma API REST. O banco tem **36 tabelas e 1 view**, com 53 chaves estrangeiras e 35 regras de validação (`CHECK`), organizadas em sete grupos: contas e acesso, feiras e feirantes, ofertas, compra e pagamento, comunicação, financeiro e receitas.
+
+Os scripts (estrutura, dados de referência, feiras reais e dados de demonstração) e o **dicionário de dados completo** (cada tabela, campo, tipo, chave e regra) estão no [repositório database](https://github.com/XepaMais/database).
 
 ## 1.1 Estratégia de dados
 
@@ -25,33 +27,15 @@ O banco de dados do Xepa+ foi implementado em MySQL 8 pelo script xepaDB 1.0 e �
 
 ## 1.2 Tabelas do banco de dados
 
-| Tabela | Principais campos | Finalidade |
+| Grupo | Tabelas | Finalidade |
 | :--- | :--- | :--- |
-| **tb_conta** | id_conta (PK), nome_conta, cpf_conta, email_conta, senha_conta (hash), telefone_conta, ativo, data_cadastro | Contas de acesso de todos os usuários |
-| **tb_consumidor** | id_consumidor (PK), id_conta (FK) | Perfil de consumidor da conta |
-| **tb_feirante** | id_feirante (PK), id_conta (FK), id_plano (FK), nome_fantasia, cnpj_feirante, ccm_feirante, matricula_feirante, grupo_comercio | Dados comerciais do feirante |
-| **tb_colaborador** | id_colaborador (PK), id_conta (FK) | Equipe do Xepa+ que administra a plataforma |
-| **tb_plano** | id_plano (PK), id_colaborador (FK), nome_plano, descricao_plano, valor_plano, ativo | Planos Semente, Broto e Colheita |
-| **tb_dispositivo_sessao** | id_dispositivo (PK), id_conta (FK), nome_aparelho, token_hash, expira_em, ultimo_acesso, revogado | Aparelhos conectados e sessões |
-| **tb_feira** | id_feira (PK), nome_feira, endereco_feira, cep_feira, cidade_feira, uf_feira, dia_semana, horario_inicio, horario_fim, latitude, longitude | Feiras exibidas no mapa |
-| **tb_feirante_feira** | id_feirante (PK, FK), id_feira (PK, FK) | Feiras em que cada feirante trabalha |
-| **tb_categoria** | id_categoria (PK), nome_categoria | Categorias de produtos |
-| **tb_produto** | id_produto (PK), id_feirante (FK), id_categoria (FK), nome_produto, descricao_produto, imagem_produto, unidade_medida, preco_referencia, ativo | Catálogo de produtos do feirante |
-| **tb_xepa** | id_xepa (PK), id_produto (FK), id_feira (FK), quantidade_xepa, preco_xepa, validade_xepa, data_retirada, horario_retirada_inicio, horario_retirada_fim, status_xepa, versao | Ofertas à venda e janela de retirada |
-| **tb_carrinho** | id_carrinho (PK), id_consumidor (FK), data_criacao | Carrinho do consumidor |
-| **tb_item_carrinho** | id_item_carrinho (PK), id_carrinho (FK), id_xepa (FK), quantidade_item | Itens do carrinho |
-| **tb_pedido** | id_pedido (PK), id_consumidor (FK), id_feirante (FK), data_pedido, status_pedido, valor_total, codigo_retirada | Pedidos, um por feirante |
-| **tb_item_pedido** | id_item_pedido (PK), id_pedido (FK), id_xepa (FK), quantidade_item, preco_unitario | Itens e preço no momento da compra |
-| **tb_tipo_pagamento** | id_tipo_pagamento (PK), metodo_pagamento | Pix, cartão de crédito, cartão de débito e dinheiro |
-| **tb_pagamento** | id_pagamento (PK), id_pedido (FK), id_tipo_pagamento (FK), valor_pagamento, status_pagamento, id_transacao_gateway, data_pagamento | Tentativas e situação do pagamento |
-| **tb_avaliacao** | id_avaliacao (PK), id_pedido (FK), id_consumidor (FK), id_feirante (FK), nota, comentario | Avaliação do pedido (nota de 1 a 5) |
-| **tb_chat** | id_chat (PK), id_consumidor (FK), id_feirante (FK), data_inicio | Conversa entre consumidor e feirante |
-| **tb_mensagem** | id_mensagem (PK), id_chat (FK), id_conta (FK), texto_mensagem, data_envio, lida | Mensagens de cada conversa |
-| **tb_mensagem_ia** | id_mensagem_ia (PK), id_conta (FK), papel, texto_mensagem_ia, data_envio | Conversas com a Xep.AI |
-| **tb_receita_culinaria** | id_receita (PK), titulo_receita, imagem_receita, modo_preparo, tempo_preparo | Receitas sugeridas ao consumidor |
-| **tb_ingrediente_receita** | id_ingrediente (PK), id_receita (FK), id_categoria (FK), nome_ingrediente, quantidade_ingrediente | Ingredientes ligados às categorias de xepa |
-| **tb_categoria_gasto** | id_categoria_gasto (PK), nome_categoria_gasto, descricao_categoria_gasto | Tipos de gasto do feirante |
-| **tb_gasto** | id_gasto (PK), id_feirante (FK), id_categoria_gasto (FK), valor_gasto, data_gasto, descricao_gasto | Despesas do feirante |
+| **Contas e acesso** | tb_conta, tb_consumidor, tb_feirante, tb_colaborador, tb_dispositivo_sessao, tb_endereco, tb_imagem | Quem usa o Xepa+, login por aparelho, fotos e registro do aceite da LGPD |
+| **Feiras e feirantes** | tb_plano, tb_feira, tb_feira_dia, tb_feirante_feira, tb_funcionario_feira | Planos, feiras com dias e horários, onde cada feirante trabalha |
+| **Ofertas** | tb_categoria, tb_produto, tb_xepa | Produtos do feirante e as xepas à venda, com preço, quantidade e janela de retirada |
+| **Compra e pagamento** | tb_carrinho, tb_item_carrinho, tb_pedido, tb_item_pedido, tb_tipo_pagamento, tb_pagamento, tb_entrega, tb_avaliacao | Do carrinho ao pedido pago, retirado e avaliado |
+| **Comunicação** | tb_chat, tb_mensagem, tb_conversa_ia, tb_mensagem_ia, tb_mensagem_suporte | Chat consumidor-feirante, Xepinha e suporte |
+| **Financeiro** | tb_origem_renda, tb_renda, tb_categoria_despesa, tb_despesa, tb_saque, vw_saldo_feirante (view) | Lucros, gastos, saques e saldo do feirante |
+| **Receitas** | tb_categoria_receita, tb_receita_culinaria, tb_ingrediente_receita | Receitas para aproveitar a xepa |
 
 ## 1.3 Relacionamentos
 
@@ -175,41 +159,45 @@ O pedido passa pelas situações: aguardando pagamento, pago, pronto para retira
 
 <br>
 
-# 3. Endpoints REST planejados
+# 3. Endpoints REST
 
-| Método | Endpoint | Finalidade | Acesso |
-| :--- | :--- | :--- | :--- |
-| **POST** | /api/auth/cadastro | Criar conta | Público |
-| **POST** | /api/auth/login | Entrar | Público |
-| **GET, PUT** | /api/usuarios/me | Consultar e editar perfil | Logado |
-| **GET** | /api/planos | Listar planos | Público |
-| **PUT** | /api/feirantes/me/plano | Alterar o plano | Feirante |
-| **GET** | /api/feiras | Listar feiras do mapa | Público |
-| **POST, PUT, DELETE** | /api/feirantes/me/feiras | Gerenciar suas feiras | Feirante |
-| **GET** | /api/xepas | Listar ofertas | Público |
-| **POST** | /api/xepas | Cadastrar oferta | Feirante |
-| **GET** | /api/xepas/{id} | Consultar oferta | Público |
-| **PUT, DELETE** | /api/xepas/{id} | Alterar ou remover oferta | Feirante |
-| **GET, POST** | /api/pedidos | Consultar e criar pedidos | Consumidor |
-| **GET** | /api/feirantes/me/vendas | Consultar vendas | Feirante |
-| **PATCH** | /api/pedidos/{id}/status | Atualizar situação | Feirante |
-| **POST** | /api/pedidos/{id}/pagamento | Registrar pagamento | Consumidor |
-| **GET, POST** | /api/financeiro/gastos | Consultar e registrar gastos | Feirante |
-| **GET, POST** | /api/financeiro/lancamentos | Consultar e registrar rendas | Feirante |
-| **GET** | /api/financeiro/resumo | Consultar indicadores | Feirante |
-| **GET** | /api/conversas | Listar conversas | Logado |
-| **GET, POST** | /api/conversas/{id}/mensagens | Ler e enviar mensagens | Logado |
-| **POST** | /api/ia/mensagens | Conversar com a Xep.AI | Feirante |
+A documentação interativa de todos os endpoints (parâmetros, respostas, códigos de erro e autenticação) fica no **Swagger**: [xepamais.com.br/api/docs](https://xepamais.com.br/api/docs). O README do [repositório backend](https://github.com/XepaMais/backend) tem a lista completa.
 
-Ajustes previstos: incluir a comissão de cada plano (15%, 8% e 5%) e o valor da comissão no pedido, criar tabelas de rendas do feirante, itens da cesta, consentimento da LGPD e recuperação de senha.
+| Grupo | Endpoints principais | Acesso |
+| :--- | :--- | :--- |
+| **Autenticação** | `POST /api/auth/cadastro-consumidor`, `POST /api/auth/cadastro-feirante`, `POST /api/auth/login` | Público |
+| **Catálogo e mapa** | `GET /api/xepas`, `GET /api/xepas/{id}`, `GET /api/feiras`, `GET /api/feiras/proximas`, `GET /api/planos`, `GET /api/receitas` | Público |
+| **Conta e LGPD** | `GET/PUT /api/conta/{id}/perfil`, `PUT .../senha`, `GET .../dispositivos`, `GET .../dados`, `GET/PUT .../consentimento`, `DELETE /api/conta/{id}` | Dono da conta |
+| **Consumidor** | `/api/consumidor/{id}/carrinho`, `.../endereco`, `.../pedidos`, `.../impacto` | Consumidor |
+| **Feirante** | `/api/feirante/{id}/xepas`, `/api/feiras/feirante/{id}`, `/api/feirante/{id}/pedidos`, `/api/feirante/{id}/plano` | Feirante |
+| **Financeiro** | `/api/financeiro/{id}/rendas`, `.../despesas`, `.../saldo`, `.../saques`, `.../resumo`, `.../historico`, `.../planilha` | Feirante |
+| **Conversas e IA** | `/api/{consumidor\|feirante}/{id}/conversas`, `/api/feirante/{id}/xepinha/mensagens` | Dono da conta |
+
+**Como funciona o acesso:**
+- O login devolve um **token**, enviado no cabeçalho `Authorization: Bearer <token>`.
+- Rotas com `{id}` só respondem ao dono da conta: `401` significa sessão expirada e `403` significa conta de outra pessoa.
+- Todo erro volta no mesmo formato: `{ status, erro, message, caminho, momento }`.
 
 ## 3.1 Dados iniciais (seed)
 
-O script já insere os meios de pagamento, as categorias de produtos e as categorias de gastos. As 975 feiras virão da lista oficial da Prefeitura de São Paulo, já usada no mapa do site, e os feirantes, consumidores, xepas e pedidos serão fictícios, simulando o piloto na Brasilândia e na Freguesia do Ó.
+O banco é alimentado por três scripts de seed, explicados no [repositório database](https://github.com/XepaMais/database):
+- **Dados de referência:** formas de pagamento, categorias, origens de renda, planos e receitas.
+- **Feiras reais** da região do piloto (Freguesia do Ó, Brasilândia e Pirituba) e da Zona Oeste, com dias, horários e coordenadas.
+- **Dados de demonstração fictícios**, gerados por script com base na pesquisa de campo:
+  - 10 feirantes e 30 consumidores;
+  - 60 xepas e 40 pedidos em todas as situações;
+  - pagamentos, financeiro, conversas e avaliações.
+
+As datas são relativas a "hoje", então sempre há xepas à venda. Um script de limpeza remove só os dados fictícios.
 
 ## 3.2 Hospedagem da API
 
-A API e o MySQL rodam em uma instância Amazon EC2 (t3.small) com disco EBS de 30 GB, IP fixo e snapshots para backup. A aplicação é empacotada pelo Maven e executada como serviço no servidor, com as credenciais do banco em variáveis de ambiente.
+A API e o MySQL rodam em uma instância Amazon EC2 com disco EBS, IP fixo e snapshots para backup.
+- A API é empacotada pelo Maven e executada como serviço no servidor, com as credenciais em variáveis de ambiente.
+- Ela fica atrás do **Nginx com HTTPS** (certificado Let's Encrypt) em `api.xepamais.com.br` e só ouve dentro do servidor.
+- O site React fica na **Vercel**, que repassa as chamadas `/api` para a API por HTTPS.
+
+O plano para suportar muito mais usuários está em [10. Escalabilidade](10-escalabilidade.md).
 
 <br>
 
@@ -251,7 +239,12 @@ O Xepa+ segue a Lei nº 13.709/2018 (LGPD), coletando apenas os dados necessári
 | **Aparelhos e sessões** | Manter o acesso seguro e permitir desconectar aparelhos | Legítimo interesse |
 | **E-mail para novidades** | Marketing | Consentimento (opcional) |
 
-No cadastro, o usuário marca a caixa “Li e aceito os Termos de Uso e a Política de Privacidade”.
+**Consentimento e direitos do titular:**
+- No cadastro, o aceite dos Termos de Uso e da Política de Privacidade é obrigatório, e a API grava a data e a versão aceita.
+- O e-mail de novidades é opcional e pode ser desligado no perfil.
+- Em **Perfil → Privacidade e dados**, a pessoa baixa todos os seus dados (JSON) ou exclui a conta. Na exclusão, os dados pessoais são anonimizados, e pedidos e pagamentos ficam guardados sem identificar a pessoa, por obrigação fiscal.
+
+Política completa: [11. LGPD](11-lgpd.md).
 
 ## 5.3 Acessibilidade
 
@@ -261,4 +254,4 @@ Parte do público tem pouca familiaridade com ferramentas digitais. Por isso, o 
 
 ---
 
-<p align="center"><a href="08-financeiro.md">← 8. Financeiro</a></p>
+<p align="center"><a href="08-financeiro.md">← 8. Financeiro</a> · <a href="10-escalabilidade.md">10. Escalabilidade →</a></p>
